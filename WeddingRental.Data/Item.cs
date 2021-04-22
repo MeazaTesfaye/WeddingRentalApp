@@ -24,8 +24,7 @@ namespace WeddingRental.Data
        // [ForeignKey(nameof(User))]
        // public int UserId { get; set; }
 
-        [Required]
-        public string ItemAddress { get; set; }
+       
 
         [Required]
         public double Price { get; set; }

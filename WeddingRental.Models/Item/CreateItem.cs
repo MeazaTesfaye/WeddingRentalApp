@@ -10,7 +10,7 @@ namespace WeddingRental.Models.Item
 {
    public class CreateItem
     {
-        public int ItemId { get; set; }
+       
 
         // [ForeignKey(nameof(User))]
         // public int UserId { get; set; }
@@ -18,11 +18,9 @@ namespace WeddingRental.Models.Item
         [Required]
   
         public double Price { get; set; }
-        
-        [Required]
+
         public string PickupAddress { get; set; }
 
-        [Required]
         public string DropoffAddress { get; set; }
     }
 }

@@ -23,10 +23,10 @@ namespace WeddingRental.Services
                    new Item()
                    {
                        OwnerId = _userId,
-                       ItemId = model.ItemId,
                        Price = model.Price,
-                       PickupAddress = model.PickupAddress,
-                       DropoffAddress = model.DropoffAddress
+                       DropoffAddress = model.DropoffAddress,
+                       PickupAddress = model.PickupAddress
+                       
                        //UserId = model.UserId,
                    };
 
