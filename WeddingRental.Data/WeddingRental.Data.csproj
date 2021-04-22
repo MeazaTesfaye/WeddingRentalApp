@@ -68,6 +68,14 @@
     <Compile Include="Migrations\202104212313401_CreatedForeignKeyRelations.Designer.cs">
       <DependentUpon>202104212313401_CreatedForeignKeyRelations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104222142536_ItmCRUDAdded.cs" />
+    <Compile Include="Migrations\202104222142536_ItmCRUDAdded.Designer.cs">
+      <DependentUpon>202104222142536_ItmCRUDAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104222212298_CreateItemClassAdded.cs" />
+    <Compile Include="Migrations\202104222212298_CreateItemClassAdded.Designer.cs">
+      <DependentUpon>202104222212298_CreateItemClassAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -87,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104212313401_CreatedForeignKeyRelations.resx">
       <DependentUpon>202104212313401_CreatedForeignKeyRelations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104222142536_ItmCRUDAdded.resx">
+      <DependentUpon>202104222142536_ItmCRUDAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104222212298_CreateItemClassAdded.resx">
+      <DependentUpon>202104222212298_CreateItemClassAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
