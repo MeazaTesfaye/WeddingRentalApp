@@ -39,11 +39,11 @@ namespace WeddingRental.WebMVC.Controllers
 
             if (service.CreateItem(model))
             {
-                TempData["SaveResult"] = "Your rental was created.";
+                TempData["SaveResult"] = "Your item was created.";
                 return RedirectToAction("Index");
             };
 
-            ModelState.AddModelError("", "Rental could not be created.");
+            ModelState.AddModelError("", "Item could not be created.");
 
             return View(model);
         }
@@ -97,7 +97,7 @@ namespace WeddingRental.WebMVC.Controllers
 
             service.DeleteItem(id);
 
-            TempData["SaveResult"] = "Your Rental was deleted";
+            TempData["SaveResult"] = "Your item was deleted";
 
             return RedirectToAction("Index");
         }

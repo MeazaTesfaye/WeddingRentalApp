@@ -1,0 +1,49 @@
+﻿@model WeddingRental.Models.Rating.RatingDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RatingDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Star)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Star)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RaterId)
+        </dd>
+
+        
+        <dd>
+            @Html.DisplayFor(model => model.RaterId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RaterId}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

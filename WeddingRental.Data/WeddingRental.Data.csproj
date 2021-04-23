@@ -80,6 +80,10 @@
     <Compile Include="Migrations\202104222318077_CreateItemClass.Designer.cs">
       <DependentUpon>202104222318077_CreateItemClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104230150291_CreatedRatingCRUD.cs" />
+    <Compile Include="Migrations\202104230150291_CreatedRatingCRUD.Designer.cs">
+      <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104222318077_CreateItemClass.resx">
       <DependentUpon>202104222318077_CreateItemClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104230150291_CreatedRatingCRUD.resx">
+      <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

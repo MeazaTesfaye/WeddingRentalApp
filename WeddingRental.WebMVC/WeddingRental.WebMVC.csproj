@@ -245,10 +245,17 @@
     <Content Include="Views\Rental\Delete.cshtml" />
     <Content Include="Views\Item\Index.cshtml" />
     <Content Include="Views\Item\Create.cshtml" />
+    <Content Include="Views\Item\Details.cshtml" />
+    <Content Include="Views\Item\Edit.cshtml" />
+    <Content Include="Views\Item\Delete.cshtml" />
+    <Content Include="Views\Rating\Index.cshtml" />
+    <Content Include="Views\Rating\Create.cshtml" />
+    <Content Include="Views\Rating\Details.cshtml" />
+    <Content Include="Views\Rating\Edit.cshtml" />
+    <Content Include="Views\Rating\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Rating\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
