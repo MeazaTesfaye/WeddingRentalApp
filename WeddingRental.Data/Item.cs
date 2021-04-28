@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace WeddingRental.Data
 {
-   // public enum Type
-    //{
-    //    Dresses,
-    //    Suits
-    //}
+    public enum Type
+    {
+        Dresses,
+        Suits
+    }
     public class Item
 
     {
@@ -21,22 +21,18 @@ namespace WeddingRental.Data
 
         public Guid OwnerId { get; set; }
 
-       // [ForeignKey(nameof(User))]
-       // public int UserId { get; set; }
-
-       
-
+        [ForeignKey(nameof(User))]
+        public int? UserId { get; set; }
+        public virtual User User { get; set; }
         [Required]
         public double Price { get; set; }
         
-        //[ForeignKey(nameof(Rating))]
+        [ForeignKey(nameof(Rating))]
+        public int? RaterId { get; set; }
+        public virtual Rating Rating { get; set; }
+        public double Star { get; set; }
 
-       // public double Star { get; set; }
-        //public int? RaterId { get; set; }
-
-        //public string Brand { get; set; }
-
-        //public virtual Rating Rating { get; set; }
+        public string Brand { get; set; }
 
         [Required]
         public string PickupAddress { get; set; }

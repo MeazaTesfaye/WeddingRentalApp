@@ -23,11 +23,12 @@ namespace WeddingRental.Services
                    new Rating()
                    {
                        OwnerId = _userId,
+                       //ItemId = model.ItemId,
                        UserName = model.UserName,
                        Star = model.Star,
                        Text = model.Text
 
-                       //UserId = model.UserId,
+                       
                    };
 
             using (var ctx = new ApplicationDbContext())
@@ -51,7 +52,8 @@ namespace WeddingRental.Services
 
                             Star = e.Star,
                             Text = e.Text,
-                            //UserName
+                            UserName = e.UserName,
+                           // ItemId = e.ItemId
                             
 
                         });
@@ -70,10 +72,11 @@ namespace WeddingRental.Services
                 return
                     new RatingDetails
                     {
+                        //ItemId = entity.ItemId,
                         Star = entity.Star,
                         Text = entity.Text,
                         UserName = entity.UserName
-                        //Star = entity.Star
+                        
 
                     };
             }

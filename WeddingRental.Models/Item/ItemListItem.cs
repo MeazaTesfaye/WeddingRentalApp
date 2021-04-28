@@ -12,7 +12,7 @@ namespace WeddingRental.Models.Item
     {
         public int ItemId { get; set; }
 
-         [ForeignKey(nameof(User))]
+        public double  Star { get; set; }
         public int? UserId { get; set; }
 
         [Required]

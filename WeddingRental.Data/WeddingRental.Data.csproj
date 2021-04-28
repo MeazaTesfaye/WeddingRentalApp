@@ -84,6 +84,14 @@
     <Compile Include="Migrations\202104230150291_CreatedRatingCRUD.Designer.cs">
       <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104272309516_UserCRUD.cs" />
+    <Compile Include="Migrations\202104272309516_UserCRUD.Designer.cs">
+      <DependentUpon>202104272309516_UserCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104282256165_Foreighnkey.cs" />
+    <Compile Include="Migrations\202104282256165_Foreighnkey.Designer.cs">
+      <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -115,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104230150291_CreatedRatingCRUD.resx">
       <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104272309516_UserCRUD.resx">
+      <DependentUpon>202104272309516_UserCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104282256165_Foreighnkey.resx">
+      <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

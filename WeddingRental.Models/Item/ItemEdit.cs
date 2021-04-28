@@ -12,18 +12,13 @@ namespace WeddingRental.Models.Item
     {
 
         public int ItemId { get; set; }
+        
+         //public int UserId { get; set; }
 
-        // [ForeignKey(nameof(User))]
-        // public int UserId { get; set; }
-
-        [Required]
-        public double Price { get; set; }
-
-
-        [Required]
+      
         public string PickupAddress { get; set; }
 
-        [Required]
+     
         public string DropoffAddress { get; set; }
         public enum Type { get, set, }
         public string Brand { get; set; }

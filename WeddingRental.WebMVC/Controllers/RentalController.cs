@@ -71,7 +71,7 @@ namespace WeddingRental.WebMVC.Controllers
             var model =
                 new RentalEdit
                 {
-                    ItemId = detail.ItemId,
+                    ItemId =   detail.ItemId,
                     RentalDate = detail.RentalDate,
                     ReturnDate = detail.ReturnDate
                 };

@@ -13,9 +13,6 @@ namespace WeddingRental.Data
         [Key]
         public int RaterId { get; set; }
         public Guid OwnerId { get; set; }
-
-       //[ForeignKey(nameof(Item))]
-       //public int? ItemId { get; set; }
         [Required]
         public double Star { get; set; }
         [Required]

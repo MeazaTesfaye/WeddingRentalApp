@@ -10,6 +10,8 @@ namespace WeddingRental.Models
     {
         public int RentalId { get; set; }
         public int ItemId { get; set; }
+        public virtual RentalListItem Item { get; set; }
+        public int? UserId { get; set; }
         public DateTime  RentalDate { get; set; }
         public double Price { get; set; }
         public DateTime ReturnDate { get; set; }

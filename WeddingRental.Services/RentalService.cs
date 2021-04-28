@@ -24,8 +24,8 @@ namespace WeddingRental.Services
                    {
                        OwnerId = _userId,
                        RentalId = model.RentalId,
-                       //UserId = model.UserId,
-                       //ItemId = model.ItemId,
+                       UserId = model.UserId,
+                       ItemId = model.ItemId,
                        RentalDate = model.RentalDate,
                        ReturnDate = model.ReturnDate
 
@@ -51,8 +51,8 @@ namespace WeddingRental.Services
                         e => new RentalListItem
                         {
                             RentalId = e.RentalId,
-                           // UserId = e.UserId,
-                            //ItemId = e.ItemId,
+                            UserId = e.UserId,
+                            ItemId = e.ItemId,
                             RentalDate = e.RentalDate,
                             ReturnDate = e.ReturnDate
 
@@ -73,6 +73,8 @@ namespace WeddingRental.Services
                     new RentalDetails
                     {
                        RentalId = entity.RentalId,
+                       Item = new RentalListItem() { ItemId = entity.Item.ItemId},
+                        UserId = entity.UserId,
                         RentalDate = entity.RentalDate,
                         ReturnDate = entity.ReturnDate,
                         Price = entity.Price

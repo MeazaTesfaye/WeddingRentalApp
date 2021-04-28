@@ -10,14 +10,12 @@ namespace WeddingRental.Models.Rating
    public class RatingListItem
     {
         public int RaterId { get; set; }
-        public Guid OwnerId { get; set; }
-
-        // [ForeignKey(nameof(Item))]
-        //  public int ItemId { get; set; }
-        [Required]
+       // public Guid OwnerId { get; set; }
+         public int? ItemId { get; set; }
+        
         public double Star { get; set; }
-        [Required]
+        
         public string Text { get; set; }
-       // public string UserName { get; set; }
+       public string UserName { get; set; }
     }
 }

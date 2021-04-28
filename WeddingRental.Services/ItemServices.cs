@@ -25,9 +25,8 @@ namespace WeddingRental.Services
                        OwnerId = _userId,
                        Price = model.Price,
                        DropoffAddress = model.DropoffAddress,
-                       PickupAddress = model.PickupAddress
-                       
-                       //UserId = model.UserId,
+                       PickupAddress = model.PickupAddress,
+                       Star = model.Star
                    };
 
             using (var ctx = new ApplicationDbContext())
@@ -51,6 +50,7 @@ namespace WeddingRental.Services
                            
                             ItemId = e.ItemId,
                             Price = e.Price,
+                            Star = e.Star,
                             PickupAddress = e.PickupAddress,
                             DropoffAddress = e.DropoffAddress
 
@@ -74,7 +74,7 @@ namespace WeddingRental.Services
                         PickupAddress = entity.PickupAddress,
                          DropoffAddress = entity.DropoffAddress,
                         Price = entity.Price,
-                        //Star = entity.Star
+                        Star = entity.Star
 
                     };
             }
@@ -107,7 +107,7 @@ namespace WeddingRental.Services
                 entity.ItemId = model.ItemId;
                 entity.DropoffAddress = model.DropoffAddress;
                 entity.PickupAddress = model.PickupAddress;
-               // entity.Brand = model.Brand;
+                entity.Brand = model.Brand;
 
                 return ctx.SaveChanges() == 1;
             }

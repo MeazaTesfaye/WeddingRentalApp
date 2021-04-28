@@ -9,17 +9,13 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<div class="alert alert-success fade in" role="alert">
+    @ViewBag.SaveResult
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+</div>
 
-@if (TempData.ContainsKey("SaveResult"))
-{
-    <div class="alert alert-success fade in" role="alert">
-
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-        @TempData["SaveResult"]
-    </div>
-}
 
 
 <table class="table">
@@ -63,9 +59,9 @@
                 @Html.DisplayFor(modelItem => item.ReturnDate)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.RentalId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.RentalId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.RentalId })
+                @Html.ActionLink("Edit", "Edit", new { id = item.RentalId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.RentalId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.RentalId })
             </td>
         </tr>
     }

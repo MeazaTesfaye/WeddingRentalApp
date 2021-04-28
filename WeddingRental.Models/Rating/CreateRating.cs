@@ -9,12 +9,10 @@ namespace WeddingRental.Models.Rating
 {
    public class CreateRating
     {
-
-        // [ForeignKey(nameof(Item))]
-        //  public int ItemId { get; set; }
-        [Required]
+         public int? ItemId { get; set; }
+       
         public double Star { get; set; }
-        [Required]
+      
         public string Text { get; set; }
         public string UserName { get; set; }
     }
