@@ -23,7 +23,7 @@ namespace WeddingRental.Services
                    new Rating()
                    {
                        OwnerId = _userId,
-                       //ItemId = model.ItemId,
+                       ItemId = model.ItemId,
                        UserName = model.UserName,
                        Star = model.Star,
                        Text = model.Text
@@ -49,11 +49,11 @@ namespace WeddingRental.Services
                     .Select(
                         e => new RatingListItem
                         {
-
+                            RaterId = e.RaterId,
                             Star = e.Star,
                             Text = e.Text,
                             UserName = e.UserName,
-                           // ItemId = e.ItemId
+                           ItemId = e.ItemId
                             
 
                         });

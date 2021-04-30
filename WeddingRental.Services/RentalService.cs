@@ -23,7 +23,7 @@ namespace WeddingRental.Services
                    new Rental()
                    {
                        OwnerId = _userId,
-                       RentalId = model.RentalId,
+                       //RentalId = model.RentalId,
                        UserId = model.UserId,
                        ItemId = model.ItemId,
                        RentalDate = model.RentalDate,
@@ -73,7 +73,7 @@ namespace WeddingRental.Services
                     new RentalDetails
                     {
                        RentalId = entity.RentalId,
-                       Item = new RentalListItem() { ItemId = entity.Item.ItemId},
+                       //Item = new RentalListItem() { ItemId = entity.Item.ItemId},
                         UserId = entity.UserId,
                         RentalDate = entity.RentalDate,
                         ReturnDate = entity.ReturnDate,

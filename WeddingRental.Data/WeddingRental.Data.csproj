@@ -92,6 +92,14 @@
     <Compile Include="Migrations\202104282256165_Foreighnkey.Designer.cs">
       <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104292257117_Views.cs" />
+    <Compile Include="Migrations\202104292257117_Views.Designer.cs">
+      <DependentUpon>202104292257117_Views.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104300015057_CreatingView.cs" />
+    <Compile Include="Migrations\202104300015057_CreatingView.Designer.cs">
+      <DependentUpon>202104300015057_CreatingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -129,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104282256165_Foreighnkey.resx">
       <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104292257117_Views.resx">
+      <DependentUpon>202104292257117_Views.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104300015057_CreatingView.resx">
+      <DependentUpon>202104300015057_CreatingView.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

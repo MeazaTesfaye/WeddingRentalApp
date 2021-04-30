@@ -19,6 +19,22 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.ItemId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.RentalDate)
         </dt>
 
@@ -45,6 +61,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.RentalId }) |
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.RentalId}) |
     @Html.ActionLink("Back to List", "Index")
 </p>

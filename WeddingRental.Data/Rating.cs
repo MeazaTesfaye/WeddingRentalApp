@@ -12,6 +12,7 @@ namespace WeddingRental.Data
     {
         [Key]
         public int RaterId { get; set; }
+        public int? ItemId { get; set; }
         public Guid OwnerId { get; set; }
         [Required]
         public double Star { get; set; }
