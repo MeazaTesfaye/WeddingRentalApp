@@ -68,11 +68,11 @@ namespace WeddingRental.Services
                 var entity =
                     ctx
                         .Ratings
-                        .Single(e => e.OwnerId == _userId);
+                        .Single(e => e.OwnerId == _userId && e.RaterId == id) ;
                 return
                     new RatingDetails
                     {
-                        //ItemId = entity.ItemId,
+                        ItemId = entity.ItemId,
                         Star = entity.Star,
                         Text = entity.Text,
                         UserName = entity.UserName

@@ -46,6 +46,7 @@ namespace WeddingRental.Services
                     .Select(
                         e => new UserListItem
                         {
+                            UserId = e.UserId,
                             UserName = e.UserName,
                             Address = e.Address,
                             Rentals =  e.Rentals
@@ -66,6 +67,7 @@ namespace WeddingRental.Services
                 return
                     new UserDetails
                     {
+                        UserId = entity.UserId,
                         UserName = entity.UserName,
                         Address = entity.Address
 
