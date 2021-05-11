@@ -92,14 +92,14 @@ namespace WeddingRental.Services
         }
 
 
-        public bool DeleteUser(int userId)
+        public bool DeleteUser(int Id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Userss
-                        .Single(e => e.UserId == userId);
+                        .Single(e => e.UserId == Id&&e.OwnerId==_userId);
 
                 ctx.Userss.Remove(entity);
 

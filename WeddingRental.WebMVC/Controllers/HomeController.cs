@@ -22,7 +22,7 @@ namespace WeddingRental.WebMVC.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Contact";
+            ViewBag.Message = "";
 
             return View();
         }
