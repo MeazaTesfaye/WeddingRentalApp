@@ -18,7 +18,7 @@ namespace WeddingRental.WebMVC.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new RentalService(userId);
             var model = service.GetRentals();
-
+            //var model = new  RentalListItem[0];
             return View(model);
         }
 
@@ -71,62 +71,29 @@ namespace WeddingRental.WebMVC.Controllers
             var model =
                 new RentalEdit
                 {
-                    ItemId =   detail.ItemId,
+                   ItemId =   detail.ItemId,
                     RentalDate = detail.RentalDate,
                     ReturnDate = detail.ReturnDate
                 };
             return View(model);
         }
-
+        
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
             var svc = CreateRentalService();
             var model = svc.GetRentalById(id);
-
             return View(model);
         }
-
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeletePost(int id)
         {
             var service = CreateRentalService();
-
             service.DeleteRental(id);
-
             TempData["SaveResult"] = "Your Rental was deleted";
-
             return RedirectToAction("Index");
-        }
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, RentalEdit model)
-        {
-            if (!ModelState.IsValid) 
-                
-                return View(model);
-
-            if (model.ItemId != id)
-            {
-                ModelState.AddModelError("", "Id Mismatch");
-                return View(model);
-            }
-
-
-            var service = CreateRentalService();
-
-            if (service.UpdateRental(model))
-            {
-                TempData["SaveResult"] = "Your Rental was updated.";
-                return RedirectToAction("Index");
-            }
-
-            ModelState.AddModelError("", "Your rental could not be updated.");
-            return View(model);
         }
 
 

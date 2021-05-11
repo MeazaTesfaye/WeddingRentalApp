@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Wedding Rental</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,17 +17,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @* @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-            </div>
+                <li>
+                    
+                       @*@Html.ActionLink("Wedding Rental", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+</div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Essence", "Index", "Home")</li>
+                    <li> <a href="https://localhost:44307/Rental">Wedding Rental</a>
+                    
+                    <li><a href="https://localhost:44307/">Home</a> </li>
+                    <li>
+                        <a href="https://localhost:44307/Item">Item</a>
+                    </li>
 
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Dresses", "Index", "Dresses")</li>
-
-                    <li>@Html.ActionLink("Suit", "Index", "Suit")</li>
-                   
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -37,7 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Essence</p>
+            <p>&copy; @DateTime.Now.Year - Wedding Rental App</p>
         </footer>
     </div>
 

@@ -14,10 +14,7 @@ namespace WeddingRental.Models.Item
         public int ItemId { get; set; }
 
         // [ForeignKey(nameof(User))]
-        // public int UserId { get; set; }
-
-        [Required]
-        public string ItemAddress { get; set; }
+         public int UserId { get; set; }
 
         [Required]
         public double Price { get; set; }
@@ -31,8 +28,6 @@ namespace WeddingRental.Models.Item
 
         [Required]
         public string DropoffAddress { get; set; }
-
-        public enum Type { get, set,}
     }
 
 }

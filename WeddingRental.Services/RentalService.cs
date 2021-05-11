@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WeddingRental.Data;
 using WeddingRental.Models;
+using WeddingRental.Models.Item;
 using WeddingRental.WebMVC.Models;
 
 namespace WeddingRental.Services
@@ -23,11 +24,12 @@ namespace WeddingRental.Services
                    new Rental()
                    {
                        OwnerId = _userId,
-                       //RentalId = model.RentalId,
+                       RentalId = model.RentalId,
                        UserId = model.UserId,
                        ItemId = model.ItemId,
                        RentalDate = model.RentalDate,
-                       ReturnDate = model.ReturnDate
+                       ReturnDate = model.ReturnDate,
+                       Price = model.Price,
 
 
                    };
@@ -51,6 +53,7 @@ namespace WeddingRental.Services
                         e => new RentalListItem
                         {
                             RentalId = e.RentalId,
+                            Price = e.Price,
                             UserId = e.UserId,
                             ItemId = e.ItemId,
                             RentalDate = e.RentalDate,
@@ -72,9 +75,11 @@ namespace WeddingRental.Services
                 return
                     new RentalDetails
                     {
-                       RentalId = entity.RentalId,
-                       //Item = new RentalListItem() { ItemId = entity.Item.ItemId},
+                       
+                       Items = new ItemListItem() { ItemId = entity.Item.ItemId, Star = entity.Item.Star, Price = entity.Item.Price, 
+                        PickupAddress = entity.Item.PickupAddress, DropoffAddress = entity.Item.DropoffAddress, UserId = entity.Item.UserId},
                         UserId = entity.UserId,
+                        ItemId = entity.ItemId,
                         RentalDate = entity.RentalDate,
                         ReturnDate = entity.ReturnDate,
                         Price = entity.Price

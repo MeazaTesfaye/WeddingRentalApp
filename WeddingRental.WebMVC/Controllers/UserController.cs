@@ -83,23 +83,19 @@ namespace WeddingRental.WebMVC.Controllers
         {
             var svc = CreateUserService();
             var model = svc.GetUserById(id);
-
             return View(model);
         }
-
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeletePost(int id)
         {
             var service = CreateUserService();
-
             service.DeleteUser(id);
-
-            TempData["SaveResult"] = "User was deleted";
-
+            TempData["SaveResult"] = "Your User was deleted";
             return RedirectToAction("Index");
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

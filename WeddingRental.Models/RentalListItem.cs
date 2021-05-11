@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeddingRental.Models.Item;
 
 namespace WeddingRental.Models
 {
@@ -12,18 +13,16 @@ namespace WeddingRental.Models
     {
        
             public int RentalId { get; set; }
-            
             public int? UserId { get; set; }
-
-             
-            public int? ItemId { get; set; }
-             
-                
+           
+             public double Price { get; set; }
              public DateTime RentalDate { get; set; }
 
-            [Required]
             public DateTime ReturnDate { get; set; }
 
-        }
+        public int? ItemId { get; set; }
+       
+
     }
+ }
 

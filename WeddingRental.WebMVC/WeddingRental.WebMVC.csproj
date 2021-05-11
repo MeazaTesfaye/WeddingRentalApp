@@ -191,6 +191,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\back.jpg" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\couple.jpg" />
     <Content Include="Images\womenDresses.jpg" />
@@ -241,16 +242,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Rental\Create.cshtml" />
-    <Content Include="Views\Rental\Details.cshtml" />
     <Content Include="Views\Rental\Edit.cshtml" />
     <Content Include="Views\Rental\Delete.cshtml" />
     <Content Include="Views\Item\Index.cshtml" />
-    <Content Include="Views\Rental\Index.cshtml" />
     <Content Include="Views\Item\Create.cshtml" />
     <Content Include="Views\Item\Details.cshtml" />
     <Content Include="Views\Item\Edit.cshtml" />
-    <Content Include="Views\Item\Delete.cshtml" />
     <Content Include="Views\Rating\Index.cshtml" />
     <Content Include="Views\Rating\Create.cshtml" />
     <Content Include="Views\Rating\Details.cshtml" />
@@ -260,6 +257,10 @@
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\Rental\Create.cshtml" />
+    <Content Include="Views\Rental\Index.cshtml" />
+    <Content Include="Views\Rental\Details.cshtml" />
+    <Content Include="Views\Item\Delete.cshtml" />
     <Content Include="Views\User\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>

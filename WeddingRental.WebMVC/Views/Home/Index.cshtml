@@ -1,25 +1,56 @@
-﻿  
-<!DOCTYPE html>
-
-<html>
-<head>
-</head>
-<body>
-
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
-    <p>Welcome</p>
-
-    <a> <img src="~/Images/couple.jpg" /> </a>
-
-
-</body>
-
-</html>
-
-
-
+﻿
 @{
     ViewBag.Title = "Home Page";
-    
 }
+@*<img src="~/Images/back.jpg" />
+<img src="~/Images/womenDresses.jpg" />
+<img src="~/Images/background.jpg" />*@
+
+
+<h1>Welcome </h1>
+
+<div id="themeSlider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#themeSlider" data-slide-to="1"></li>
+        <li data-target="#themeSlider" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="imgOverlay"></div>
+            <img style="height:800px;width:50%" src="~/Images/background.jpg" />
+            <div class="carousel-caption">
+                <h3>Wedding Dresses</h3>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgOverlay"></div>
+            <img style="height:800px;width:100%" src="~/Images/womenDresses.jpg" />
+            <div class="carousel-caption">
+                
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgOverlay"></div>
+            <img style="height:800px;width:100%" src="~/Images/back.jpg"/>
+            <div class="carousel-caption">
+               
+
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+        <span class="fa fa-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#themeSlider" data-slide="next">
+        <span class="fa fa-chevron-right"></span>
+    </a>
+
+
+</div>
+
+

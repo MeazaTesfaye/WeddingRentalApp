@@ -84,27 +84,23 @@ namespace WeddingRental.WebMVC.Controllers
         {
             var svc = CreateItemService();
             var model = svc.GetItemById(id);
-
             return View(model);
         }
-
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeletePost(int id)
         {
             var service = CreateItemService();
-
             service.DeleteItem(id);
-
-            TempData["SaveResult"] = "Your item was deleted";
-
+            TempData["SaveResult"] = "Your Item was deleted";
             return RedirectToAction("Index");
         }
 
-   
 
-    [HttpPost]
+
+
+        [HttpPost]
     [ValidateAntiForgeryToken]
     public ActionResult Edit(int id, ItemEdit model)
     {

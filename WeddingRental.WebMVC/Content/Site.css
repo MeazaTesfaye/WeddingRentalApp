@@ -7,3 +7,80 @@
     background-repeat: no-repeat;
     
 }
+
+nav{
+    background-color:white;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    color: white;
+    vertical-align: top;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px;
+    font-style: italic;
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    border: 2px solid black;
+    outline: white solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(255, 99, 71, 0.5);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+
+li {
+    color: black;
+    
+    vertical-align: top;
+   
+    text-transform: capitalize;
+    
+    font-style:normal;
+    font-size: 18px;
+    font-family: "Sofia", sans-serif;
+}

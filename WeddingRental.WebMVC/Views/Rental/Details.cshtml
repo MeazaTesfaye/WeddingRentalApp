@@ -18,6 +18,8 @@
             @Html.DisplayFor(model => model.RentalId)
         </dd>
 
+
+
         <dt>
             @Html.DisplayNameFor(model => model.ItemId)
         </dt>
@@ -50,6 +52,7 @@
             @Html.DisplayFor(model => model.Price)
         </dd>
 
+
         <dt>
             @Html.DisplayNameFor(model => model.ReturnDate)
         </dt>
@@ -58,9 +61,17 @@
             @Html.DisplayFor(model => model.ReturnDate)
         </dd>
 
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Items.Star)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Items.Star)
+        </dd>
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.RentalId}) |
+    @Html.ActionLink("Edit", "Edit", new {id = Model.RentalId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -8,11 +8,7 @@ using System.Threading.Tasks;
 
 namespace WeddingRental.Data
 {
-    public enum Type
-    {
-        Dresses,
-        Suits
-    }
+  
     public class Item
 
     {
