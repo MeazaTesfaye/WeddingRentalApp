@@ -56,63 +56,6 @@
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Migrations\202104192031047_InitialCreate.cs" />
-    <Compile Include="Migrations\202104192031047_InitialCreate.Designer.cs">
-      <DependentUpon>202104192031047_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104200441149_Update-Database.cs" />
-    <Compile Include="Migrations\202104200441149_Update-Database.Designer.cs">
-      <DependentUpon>202104200441149_Update-Database.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104212313401_CreatedForeignKeyRelations.cs" />
-    <Compile Include="Migrations\202104212313401_CreatedForeignKeyRelations.Designer.cs">
-      <DependentUpon>202104212313401_CreatedForeignKeyRelations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104222142536_ItmCRUDAdded.cs" />
-    <Compile Include="Migrations\202104222142536_ItmCRUDAdded.Designer.cs">
-      <DependentUpon>202104222142536_ItmCRUDAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104222212298_CreateItemClassAdded.cs" />
-    <Compile Include="Migrations\202104222212298_CreateItemClassAdded.Designer.cs">
-      <DependentUpon>202104222212298_CreateItemClassAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104222318077_CreateItemClass.cs" />
-    <Compile Include="Migrations\202104222318077_CreateItemClass.Designer.cs">
-      <DependentUpon>202104222318077_CreateItemClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104230150291_CreatedRatingCRUD.cs" />
-    <Compile Include="Migrations\202104230150291_CreatedRatingCRUD.Designer.cs">
-      <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104272309516_UserCRUD.cs" />
-    <Compile Include="Migrations\202104272309516_UserCRUD.Designer.cs">
-      <DependentUpon>202104272309516_UserCRUD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104282256165_Foreighnkey.cs" />
-    <Compile Include="Migrations\202104282256165_Foreighnkey.Designer.cs">
-      <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104292257117_Views.cs" />
-    <Compile Include="Migrations\202104292257117_Views.Designer.cs">
-      <DependentUpon>202104292257117_Views.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104300015057_CreatingView.cs" />
-    <Compile Include="Migrations\202104300015057_CreatingView.Designer.cs">
-      <DependentUpon>202104300015057_CreatingView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105111632348_Migrations.cs" />
-    <Compile Include="Migrations\202105111632348_Migrations.Designer.cs">
-      <DependentUpon>202105111632348_Migrations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105112045363_Migrations1.cs" />
-    <Compile Include="Migrations\202105112045363_Migrations1.Designer.cs">
-      <DependentUpon>202105112045363_Migrations1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105112215128_Migrationss.cs" />
-    <Compile Include="Migrations\202105112215128_Migrationss.Designer.cs">
-      <DependentUpon>202105112215128_Migrationss.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
     <Compile Include="Rental.cs" />
@@ -121,50 +64,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104192031047_InitialCreate.resx">
-      <DependentUpon>202104192031047_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104200441149_Update-Database.resx">
-      <DependentUpon>202104200441149_Update-Database.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104212313401_CreatedForeignKeyRelations.resx">
-      <DependentUpon>202104212313401_CreatedForeignKeyRelations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104222142536_ItmCRUDAdded.resx">
-      <DependentUpon>202104222142536_ItmCRUDAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104222212298_CreateItemClassAdded.resx">
-      <DependentUpon>202104222212298_CreateItemClassAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104222318077_CreateItemClass.resx">
-      <DependentUpon>202104222318077_CreateItemClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104230150291_CreatedRatingCRUD.resx">
-      <DependentUpon>202104230150291_CreatedRatingCRUD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104272309516_UserCRUD.resx">
-      <DependentUpon>202104272309516_UserCRUD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104282256165_Foreighnkey.resx">
-      <DependentUpon>202104282256165_Foreighnkey.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104292257117_Views.resx">
-      <DependentUpon>202104292257117_Views.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104300015057_CreatingView.resx">
-      <DependentUpon>202104300015057_CreatingView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105111632348_Migrations.resx">
-      <DependentUpon>202105111632348_Migrations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105112045363_Migrations1.resx">
-      <DependentUpon>202105112045363_Migrations1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105112215128_Migrationss.resx">
-      <DependentUpon>202105112215128_Migrationss.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

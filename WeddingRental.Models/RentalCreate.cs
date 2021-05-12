@@ -11,11 +11,11 @@ namespace WeddingRental.Models
     {
         [Key]
         public int RentalId { get; set; }
-        [Required]
+        
         public int ItemId { get; set; }
         
        public double Price { get; set; }
-        [Required]
+       
         public int UserId { get; set; }
 
         [Required]

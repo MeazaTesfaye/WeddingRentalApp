@@ -11,7 +11,7 @@ namespace WeddingRental.Models.Rating
     {
         public int RaterId { get; set; }
 
-        [ForeignKey(nameof(Item))]
+        
         public int? ItemId { get; set; }
         
         public double Star { get; set; }

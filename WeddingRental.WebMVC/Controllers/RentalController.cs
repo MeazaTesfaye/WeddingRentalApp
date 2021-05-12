@@ -72,12 +72,33 @@ namespace WeddingRental.WebMVC.Controllers
                 new RentalEdit
                 {
                    ItemId =   detail.ItemId,
+                   UserId = detail.UserId,
                     RentalDate = detail.RentalDate,
                     ReturnDate = detail.ReturnDate
                 };
             return View(model);
         }
-        
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, RentalEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+            if (model.RentalId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+            var service = CreateRentalService();
+            if (service.UpdateRental(model))
+            {
+                TempData["SaveResult"] = "Your Rental was updated.";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Your Rental could not be updated.");
+            return View(model);
+        }
+
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {

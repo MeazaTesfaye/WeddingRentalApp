@@ -35,5 +35,6 @@ namespace WeddingRental.Data
 
         [Required]
         public string DropoffAddress { get; set; }
+
     }
 }

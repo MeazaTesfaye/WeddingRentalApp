@@ -75,7 +75,7 @@ namespace WeddingRental.Services
                 return
                     new RentalDetails
                     {
-                       
+                       RentalId = entity.RentalId,
                        Items = new ItemListItem() { ItemId = entity.Item.ItemId, Star = entity.Item.Star, Price = entity.Item.Price, 
                         PickupAddress = entity.Item.PickupAddress, DropoffAddress = entity.Item.DropoffAddress, UserId = entity.Item.UserId},
                         UserId = entity.UserId,
@@ -98,6 +98,8 @@ namespace WeddingRental.Services
                     .Single(e => e.RentalId == model.RentalId && e.OwnerId == _userId);
 
                 entity.ItemId = model.ItemId;
+                entity.UserId = model.UserId;
+                entity.Price = model.Price;
                 entity.RentalDate = model.RentalDate;
                 entity.ReturnDate = model.ReturnDate;
 
