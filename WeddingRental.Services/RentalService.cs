@@ -24,7 +24,6 @@ namespace WeddingRental.Services
                    new Rental()
                    {
                        OwnerId = _userId,
-                       RentalId = model.RentalId,
                        UserId = model.UserId,
                        ItemId = model.ItemId,
                        RentalDate = model.RentalDate,
@@ -78,8 +77,7 @@ namespace WeddingRental.Services
                        RentalId = entity.RentalId,
                        Items = new ItemListItem() { ItemId = entity.Item.ItemId, Star = entity.Item.Star, Price = entity.Item.Price, 
                         PickupAddress = entity.Item.PickupAddress, DropoffAddress = entity.Item.DropoffAddress, UserId = entity.Item.UserId},
-                        UserId = entity.UserId,
-                        ItemId = entity.ItemId,
+                        
                         RentalDate = entity.RentalDate,
                         ReturnDate = entity.ReturnDate,
                         Price = entity.Price

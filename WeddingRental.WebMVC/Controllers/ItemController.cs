@@ -79,7 +79,7 @@ namespace WeddingRental.WebMVC.Controllers
             return View(model);
         }
 
-        [ActionName("Delete")]
+        
         public ActionResult Delete(int id)
         {
             var svc = CreateItemService();

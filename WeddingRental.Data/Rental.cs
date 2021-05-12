@@ -12,7 +12,6 @@ namespace WeddingRental.Data
     {
         [Key]
         public int RentalId { get; set; }
-
         public Guid OwnerId { get; set; }
         [Required]
         public double Price { get; set; }
@@ -22,12 +21,9 @@ namespace WeddingRental.Data
         public virtual User User { get; set; }
         
         [ForeignKey(nameof(Item))]
-
         public int? ItemId { get; set; }
         public virtual Item Item { get; set; }
-
         public DateTime RentalDate { get; set; }
-
         [Required]
         public DateTime ReturnDate { get; set; }
     }
